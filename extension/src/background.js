@@ -1817,6 +1817,44 @@ function registerEventListeners() {
 }
 
 // ---------------------------------------------------------------------------
+// Testing exports (dead code in Firefox — MV2 bg scripts don't have module)
+// Used by vitest to import handlers, helpers, and constants for unit tests.
+// ---------------------------------------------------------------------------
+
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = {
+    HOST_NAME,
+    PROTOCOL_VERSION,
+    FINGERPRINT_FILES,
+    computeFingerprint,
+    queryAllTabsSafe,
+    filterTabs,
+    targetTabId,
+    realPageUrl,
+    activeTabId,
+    enrichTabs,
+    getWorkspaceTabMap,
+    pageScript,
+    normalizePageRef,
+    restoreSessionOfType,
+    getFrameList,
+    execInFrame,
+    runPageScript,
+    runPageScriptAllFrames,
+    runPageScriptText,
+    runPageScriptSnapshot,
+    requireChromeApi,
+    requirePrefsApi,
+    resolveTabUrls,
+    handlers,
+    handleRequest,
+    sendOk,
+    sendError,
+    emitEvent,
+  };
+}
+
+// ---------------------------------------------------------------------------
 // Start
 // ---------------------------------------------------------------------------
 
