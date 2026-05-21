@@ -1,0 +1,525 @@
+[
+  {
+    "namespace": "zenChrome",
+    "description": "Privileged operations against Zen chrome windows (gZen* managers).",
+    "functions": [
+      {
+        "name": "compactSet",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "value", "type": "boolean" }
+        ]
+      },
+      {
+        "name": "compactToggle",
+        "type": "function",
+        "async": true,
+        "parameters": []
+      },
+      {
+        "name": "workspaceSwitch",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "uuid", "type": "string" }
+        ]
+      },
+      {
+        "name": "workspacesList",
+        "type": "function",
+        "async": true,
+        "parameters": []
+      },
+      {
+        "name": "glanceClose",
+        "type": "function",
+        "async": true,
+        "parameters": []
+      },
+      {
+        "name": "glanceExpand",
+        "type": "function",
+        "async": true,
+        "parameters": []
+      },
+      {
+        "name": "glanceList",
+        "type": "function",
+        "async": true,
+        "parameters": []
+      },
+      {
+        "name": "glanceCloseAll",
+        "type": "function",
+        "async": true,
+        "parameters": []
+      },
+      {
+        "name": "splitViewCreate",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "tabUrlsJson", "type": "string" },
+          { "name": "gridType", "type": "string" }
+        ]
+      },
+      {
+        "name": "splitUnsplit",
+        "type": "function",
+        "async": true,
+        "parameters": []
+      },
+      {
+        "name": "splitViewList",
+        "type": "function",
+        "async": true,
+        "parameters": []
+      },
+      {
+        "name": "splitViewAddTab",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "tabUrlsJson", "type": "string" },
+          { "name": "gridType", "type": "string" }
+        ]
+      },
+      {
+        "name": "splitViewSetLayout",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "gridType", "type": "string" }
+        ]
+      },
+      {
+        "name": "splitViewResize",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "path", "type": "string" },
+          { "name": "sizesJson", "type": "string" }
+        ]
+      },
+      {
+        "name": "splitViewRearrange",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "enable", "type": "boolean" }
+        ]
+      },
+      {
+        "name": "shortcutsReset",
+        "type": "function",
+        "async": true,
+        "parameters": []
+      },
+      {
+        "name": "compactHide",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "what", "type": "string" }
+        ]
+      },
+      {
+        "name": "glanceOpen",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "url", "type": "string" }
+        ]
+      },
+      {
+        "name": "urlbarSearch",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "query", "type": "string" },
+          { "name": "submit", "type": "boolean" }
+        ]
+      },
+      {
+        "name": "urlbarClose",
+        "type": "function",
+        "async": true,
+        "parameters": []
+      },
+      {
+        "name": "urlbarActionsList",
+        "type": "function",
+        "async": true,
+        "parameters": []
+      },
+      {
+        "name": "urlbarActionsRun",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "action", "type": "string" }
+        ]
+      },
+      {
+        "name": "essentialsList",
+        "type": "function",
+        "async": true,
+        "parameters": []
+      },
+      {
+        "name": "essentialsAdd",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "tabUrlsJson", "type": "string" }
+        ]
+      },
+      {
+        "name": "essentialsRemove",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "tabUrlsJson", "type": "string" },
+          { "name": "unpin", "type": "boolean" }
+        ]
+      },
+      {
+        "name": "essentialsReset",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "tabUrlsJson", "type": "string" }
+        ]
+      },
+      {
+        "name": "essentialsReplaceUrl",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "tabUrlsJson", "type": "string" }
+        ]
+      },
+      {
+        "name": "workspaceCreate",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "name", "type": "string" },
+          { "name": "icon", "type": "string" }
+        ]
+      },
+      {
+        "name": "workspaceRemove",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "uuid", "type": "string" }
+        ]
+      },
+      {
+        "name": "workspaceRename",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "uuid", "type": "string" },
+          { "name": "name", "type": "string" }
+        ]
+      },
+      {
+        "name": "workspaceSetIcon",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "uuid", "type": "string" },
+          { "name": "icon", "type": "string" }
+        ]
+      },
+      {
+        "name": "workspaceSetContainer",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "uuid", "type": "string" },
+          { "name": "cookieStoreId", "type": "string" }
+        ]
+      },
+      {
+        "name": "workspaceReorder",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "uuid", "type": "string" },
+          { "name": "index", "type": "integer" }
+        ]
+      },
+      {
+        "name": "workspaceUnload",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "workspaceId", "type": "string" },
+          { "name": "others", "type": "boolean" }
+        ]
+      },
+      {
+        "name": "workspaceMoveTab",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "workspaceId", "type": "string" },
+          { "name": "tabUrlsJson", "type": "string" }
+        ]
+      },
+      {
+        "name": "windowSyncForce",
+        "type": "function",
+        "async": true,
+        "parameters": []
+      },
+      {
+        "name": "share",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "url", "type": "string" },
+          { "name": "title", "type": "string" },
+          { "name": "text", "type": "string" }
+        ]
+      },
+      {
+        "name": "shareCan",
+        "type": "function",
+        "async": true,
+        "parameters": []
+      },
+      {
+        "name": "modsList",
+        "type": "function",
+        "async": true,
+        "parameters": []
+      },
+      {
+        "name": "modsInstall",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "modId", "type": "string" },
+          { "name": "url", "type": "string", "optional": true }
+        ]
+      },
+      {
+        "name": "modsRemove",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "modId", "type": "string" }
+        ]
+      },
+      {
+        "name": "modsEnable",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "modId", "type": "string" }
+        ]
+      },
+      {
+        "name": "modsDisable",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "modId", "type": "string" }
+        ]
+      },
+      {
+        "name": "foldersList",
+        "type": "function",
+        "async": true,
+        "parameters": []
+      },
+      {
+        "name": "foldersCreate",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "label", "type": "string" },
+          { "name": "workspaceId", "type": "string", "optional": true }
+        ]
+      },
+      {
+        "name": "foldersDelete",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "folderId", "type": "string" }
+        ]
+      },
+      {
+        "name": "foldersRename",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "folderId", "type": "string" },
+          { "name": "name", "type": "string" }
+        ]
+      },
+      {
+        "name": "foldersCollapse",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "folderId", "type": "string" },
+          { "name": "collapsed", "type": "boolean" }
+        ]
+      },
+      {
+        "name": "foldersAddTab",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "folderId", "type": "string" },
+          { "name": "tabUrlsJson", "type": "string" }
+        ]
+      },
+      {
+        "name": "foldersSetIcon",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "folderId", "type": "string" },
+          { "name": "icon", "type": "string" }
+        ]
+      },
+      {
+        "name": "foldersCreateSubfolder",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "parentId", "type": "string" },
+          { "name": "label", "type": "string", "optional": true }
+        ]
+      },
+      {
+        "name": "foldersUnpack",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "folderId", "type": "string" }
+        ]
+      },
+      {
+        "name": "foldersUnload",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "folderId", "type": "string" }
+        ]
+      },
+      {
+        "name": "foldersMoveToWorkspace",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "folderId", "type": "string" },
+          { "name": "workspaceId", "type": "string" }
+        ]
+      },
+      {
+        "name": "foldersConvertToWorkspace",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "folderId", "type": "string" }
+        ]
+      },
+      {
+        "name": "modsPreferences",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "modId", "type": "string" }
+        ]
+      },
+      { "name": "liveFoldersList", "type": "function", "async": true, "parameters": [] },
+      {
+        "name": "liveFoldersCreate",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "provider", "type": "string" },
+          { "name": "url", "type": "string" },
+          { "name": "label", "type": "string" }
+        ]
+      },
+      {
+        "name": "liveFoldersDelete",
+        "type": "function",
+        "async": true,
+        "parameters": [ { "name": "folderId", "type": "string" } ]
+      },
+      {
+        "name": "liveFoldersRefresh",
+        "type": "function",
+        "async": true,
+        "parameters": [ { "name": "folderId", "type": "string" } ]
+      },
+      {
+        "name": "liveFoldersPause",
+        "type": "function",
+        "async": true,
+        "parameters": [ { "name": "folderId", "type": "string" } ]
+      },
+      {
+        "name": "liveFoldersResume",
+        "type": "function",
+        "async": true,
+        "parameters": [ { "name": "folderId", "type": "string" } ]
+      },
+      { "name": "boostsList", "type": "function", "async": true, "parameters": [] },
+      {
+        "name": "boostsCreate",
+        "type": "function",
+        "async": true,
+        "parameters": [ { "name": "domain", "type": "string" } ]
+      },
+      {
+        "name": "boostsDelete",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "domain", "type": "string" },
+          { "name": "id", "type": "string" }
+        ]
+      },
+      {
+        "name": "boostsActivate",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "domain", "type": "string" },
+          { "name": "id", "type": "string" }
+        ]
+      },
+      {
+        "name": "boostsToggle",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "domain", "type": "string" },
+          { "name": "id", "type": "string" }
+        ]
+      },
+      {
+        "name": "boostsUpdate",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "domain", "type": "string" },
+          { "name": "id", "type": "string" },
+          { "name": "dataJson", "type": "string" }
+        ]
+      }
+    ]
+  }
+]

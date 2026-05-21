@@ -1,0 +1,9 @@
+/target
+zen-browser/
+**/*.rs.bk
+Cargo.lock.bak
+.DS_Store
+extension/manifest.json
+
+# Project docs are local-only for now
+/docs/

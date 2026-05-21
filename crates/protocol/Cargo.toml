@@ -1,0 +1,11 @@
+[package]
+name = "zenctl-protocol"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Shared wire types for zenctl daemon/client/extension."
+
+[dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }

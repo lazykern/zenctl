@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>zenctl — setup</title>
+  <style>
+    body { font-family: system-ui, sans-serif; padding: 2rem; max-width: 600px; line-height: 1.6; }
+    h1   { font-size: 1.2rem; margin-bottom: 0.25rem; }
+    code { background: #f0f0f0; padding: 0.1em 0.4em; border-radius: 3px; font-size: 0.95em; }
+    pre  { background: #f0f0f0; padding: 0.75rem 1rem; border-radius: 4px; overflow-x: auto; }
+    .id  { font-family: monospace; color: #555; font-size: 0.9em; }
+  </style>
+</head>
+<body>
+  <h1>zenctl bridge</h1>
+  <p>There is nothing to configure here. The extension connects automatically
+     once the native messaging host is registered.</p>
+
+  <h2>Setup (one-time)</h2>
+  <pre>brew install zenctl      # or: cargo install zenctl
+zenctl install           # registers the native host
+</pre>
+  <p>Then restart Zen Browser and the extension will connect on its own.</p>
+
+  <h2>Extension ID</h2>
+  <p class="id" id="ext-id">loading…</p>
+  <script src="options.js"></script>
+</body>
+</html>

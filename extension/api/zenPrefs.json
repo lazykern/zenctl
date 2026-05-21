@@ -1,0 +1,44 @@
+[
+  {
+    "namespace": "zenPrefs",
+    "description": "Privileged access to Zen / Gecko preferences via Services.prefs.",
+    "functions": [
+      {
+        "name": "getPref",
+        "type": "function",
+        "async": true,
+        "description": "Return { type, value, has_user_value } for a pref, or null if unset.",
+        "parameters": [
+          { "name": "name", "type": "string" }
+        ]
+      },
+      {
+        "name": "setPref",
+        "type": "function",
+        "async": true,
+        "description": "Set a pref. Branch is inferred from JS type (boolean/integer/string).",
+        "parameters": [
+          { "name": "name", "type": "string" },
+          { "name": "value", "type": "any" }
+        ]
+      },
+      {
+        "name": "clearUserPref",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "name", "type": "string" }
+        ]
+      },
+      {
+        "name": "listPrefs",
+        "type": "function",
+        "async": true,
+        "description": "Enumerate prefs under a prefix (e.g. 'zen.workspaces.').",
+        "parameters": [
+          { "name": "prefix", "type": "string" }
+        ]
+      }
+    ]
+  }
+]
